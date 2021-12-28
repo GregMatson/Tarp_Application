@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CD2222"
+    tools:context=".AdminDash">
+
+
+    <Button
+        android:id="@+id/aClasses"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:alpha="1"
+        android:backgroundTint="#CEB326"
+        android:fontFamily="@font/orienta"
+        android:text="Remove Class"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/aimageView"
+        app:layout_constraintStart_toStartOf="@+id/aimageView"
+        app:layout_constraintTop_toBottomOf="@+id/aimageView" />
+
+    <Button
+        android:id="@+id/alogout"
+        android:layout_width="123dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="100dp"
+        android:alpha="1"
+        android:backgroundTint="#CEB326"
+        android:fontFamily="@font/orienta"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/aChats"
+        app:layout_constraintStart_toStartOf="@+id/aChats"
+        app:layout_constraintTop_toBottomOf="@+id/aChats" />
+
+    <Button
+        android:id="@+id/aChats"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:alpha="1"
+        android:backgroundTint="#CEB326"
+        android:fontFamily="@font/orienta"
+        android:text="Chats"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/aUsers"
+        app:layout_constraintStart_toStartOf="@+id/aUsers"
+        app:layout_constraintTop_toBottomOf="@+id/aUsers" />
+
+    <Button
+        android:id="@+id/aUsers"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:alpha="1"
+        android:backgroundTint="#CEB326"
+        android:fontFamily="@font/orienta"
+        android:text="Remove User"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/aClasses"
+        app:layout_constraintStart_toStartOf="@+id/aClasses"
+        app:layout_constraintTop_toBottomOf="@+id/aClasses" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="38dp"
+        android:alpha="1"
+        android:background="#CEB326"
+        android:text="Welcome Admin!"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/aimageView"
+        android:layout_width="217dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="97dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/tarpmascot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

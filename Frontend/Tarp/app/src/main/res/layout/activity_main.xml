@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CD2222"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        android:alpha="1"
+        android:background="#CEB326"
+        android:text="Welcome To Tarp!"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signBtn"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#CEB326"
+        android:text="Sign-Up"
+        android:textColor="#0C0C0C"
+        android:textStyle="bold"
+        app:iconTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loginBtn" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="#CEB326"
+        android:text="Login"
+        android:textColor="#0C0C0C"
+        android:textStyle="bold"
+        app:iconTint="#FFEB3B"
+        app:layout_constraintEnd_toStartOf="@+id/signBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentCheck" />
+
+    <EditText
+        android:id="@+id/login_activity_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="88dp"
+        android:background="#CEB326"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/login_activity_passWord"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="88dp"
+        android:background="#CEB326"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_activity_userName" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="105dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome"
+        app:srcCompat="@drawable/tarpmascot" />
+
+    <TextView
+        android:id="@+id/failedLogin"
+        android:layout_width="183dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="148dp"
+        android:fontFamily="@font/orienta"
+        android:textAlignment="center"
+        android:textColor="#ED0606"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+    <CheckBox
+        android:id="@+id/studentCheck"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="#CEB326"
+        android:buttonTint="#000000"
+        android:fontFamily="@font/orienta"
+        android:text="Student"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/teacherCheck"
+        app:layout_constraintEnd_toStartOf="@+id/teacherCheck"
+        app:layout_constraintTop_toTopOf="@+id/teacherCheck"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/teacherCheck"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="#CEB326"
+        android:buttonTint="#000000"
+        android:fontFamily="@font/orienta"
+        android:text="Teacher"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/signBtn"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toEndOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/login_activity_passWord" />
+
+    <CheckBox
+        android:id="@+id/adminCheck"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="#CEB326"
+        android:buttonTint="#000000"
+        android:fontFamily="@font/orienta"
+        android:text="Admin"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/teacherCheck"
+        app:layout_constraintStart_toEndOf="@+id/teacherCheck"
+        app:layout_constraintTop_toTopOf="@+id/teacherCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Tarp</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    <string name="title_map">Map</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_classes">Classes</string>
+    <string name="title_profile">Profile</string>
+    <string name="failLogin">Username or Password incorrect</string>
+    <string name="failSign">Passwords do not match</string>
+    <string name="logout">Log Out</string>
+    <string name="failUser">Username is taken</string>
+    <string name="classExist">Class and Section already exist</string>
+    <string name="createUnfilled">Please fill all fields</string>
+
+    <string name="createdClass">New Class Created</string>
+    <string name="addedClass">Enrolled in Class</string>
+    <string name="failAddClass">Class not found</string>
+    <string name="addIncomplete">Please fill in all fields</string>
+    <string name="todo">TODO</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="edit">Edit</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="profile">Profile</string>
+    <string name="username">UserName</string>
+    <string name="password">¯\_(ツ)_/¯</string>
+    <string name="removeFillAll">Please fill in all fields</string>
+    <string name="classRemoveSuccess">Class removed</string>
+    <string name="removeNotFound">Class not found</string>
+    <string name="responseFailure">ʘwʘ, oopsies! Swomething went wong! ¯\_(ツ)_/¯ </string>
+    <string name="sEditConfirm">Changes Saved</string>
+    <string name="editIncorrectPass">Incorrect Password</string>
+    <string name="classNotFound">No class Found</string>
+    <string name="classDeleted">Class Deleted</string>
+    <string name="deleteUserConfirm">User Deleted</string>
+    <string name="UserNotFound">User not Found</string>
+</resources>

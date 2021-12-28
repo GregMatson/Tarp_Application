@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CD2222"
+    tools:context=".TeacherRemoveClass">
+
+    <Button
+        android:id="@+id/tcancelRemoveClass"
+        android:layout_width="101dp"
+        android:layout_height="58dp"
+        android:alpha="1"
+        android:backgroundTint="#CEB326"
+        android:fontFamily="@font/orienta"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tRemoveClass"
+        app:layout_constraintEnd_toEndOf="@+id/tremoveClassName"
+        app:layout_constraintStart_toStartOf="@+id/tremoveClassName"
+        app:layout_constraintTop_toTopOf="@+id/tRemoveClass" />
+
+    <Button
+        android:id="@+id/tRemoveClass"
+        android:layout_width="101dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="84dp"
+        android:alpha="1"
+        android:backgroundTint="#CEB326"
+        android:fontFamily="@font/orienta"
+        android:text="RemoveClass"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tremoveClassSection"
+        app:layout_constraintStart_toStartOf="@+id/tremoveClassSection"
+        app:layout_constraintTop_toBottomOf="@+id/tremoveClassSection" />
+
+    <EditText
+        android:id="@+id/tremoveClassSection"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="27dp"
+        android:background="#CEB326"
+        android:ems="10"
+        android:fontFamily="@font/orienta"
+        android:hint="Section"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tRemoveClass"
+        app:layout_constraintEnd_toEndOf="@+id/teaClassListRemove"
+        app:layout_constraintTop_toBottomOf="@+id/teaClassListRemove" />
+
+    <EditText
+        android:id="@+id/tremoveClassName"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:background="#CEB326"
+        android:ems="10"
+        android:fontFamily="@font/orienta"
+        android:hint="Class Name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/tremoveClassSection"
+        app:layout_constraintEnd_toStartOf="@+id/tremoveClassSection"
+        app:layout_constraintStart_toStartOf="@+id/teaClassListRemove"
+        app:layout_constraintTop_toTopOf="@+id/tremoveClassSection" />
+
+    <TextView
+        android:id="@+id/teaClassListRemove"
+        android:layout_width="330dp"
+        android:layout_height="372dp"
+        android:layout_marginBottom="25dp"
+        android:background="#CEB326"
+        android:fontFamily="@font/orienta"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/tremoveClassSection"
+        app:layout_constraintEnd_toEndOf="@+id/tRemoveClassBanner"
+        app:layout_constraintStart_toStartOf="@+id/tRemoveClassBanner"
+        app:layout_constraintTop_toBottomOf="@+id/tRemoveClassBanner" />
+
+    <TextView
+        android:id="@+id/tRemoveClassBanner"
+        android:layout_width="337dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="32dp"
+        android:alpha="1"
+        android:background="#CEB326"
+        android:text="Remove Class"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/teaClassListRemove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tremoveError"
+        android:layout_width="165dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="167dp"
+        android:fontFamily="@font/orienta"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tRemoveClass"
+        app:layout_constraintStart_toStartOf="@+id/tcancelRemoveClass"
+        app:layout_constraintTop_toBottomOf="@+id/teaClassListRemove" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
